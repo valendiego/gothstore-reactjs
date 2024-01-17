@@ -1,0 +1,51 @@
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 4rem;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    
+}
+
+.logo{
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    color: #000;
+}
+
+.ul{
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__link{
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    transition: all .42s ease;
+}
+
+.nav__link:hover{
+    border: none;
+    color:rgb(212, 26, 73);
+}
+
+
+
+
