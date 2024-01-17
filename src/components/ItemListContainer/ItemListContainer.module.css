@@ -15,8 +15,3 @@
     align-items: center;
     padding: 40px 0 40px 0;
 }
-
-.card-img-top{
-    height: 300px;
-    object-fit: cover;
-}
