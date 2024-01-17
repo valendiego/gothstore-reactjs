@@ -5,3 +5,8 @@
     color: #fff;
     text-decoration: none;
 }
+
+.card__img{
+    height: 300px;
+    object-fit: cover;
+}

@@ -20,6 +20,10 @@
     
 }
 
+.link__logo{
+    text-decoration: none;
+}
+
 .logo{
     font-size: 2rem;
     font-family:'Times New Roman', Times, serif;
