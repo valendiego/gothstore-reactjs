@@ -9,6 +9,20 @@
     border-top: 2px solid #0000008f;
 }
 
+.loading{
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.categories{
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0 0 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #0000002a;
+}
+
 .container__products{
     display: flex;
     justify-content: center;

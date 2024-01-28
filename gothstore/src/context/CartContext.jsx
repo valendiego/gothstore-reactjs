@@ -3,7 +3,10 @@ import { useState, createContext, useContext } from 'react'
 export const CartContext = createContext({
     cart: [],
     addItem: () => {},
-    isInCart: () => {}
+    isInCart: () => {},
+    totalQuantity: 0,
+    total: 0,
+    clearCart: () => {}
   })
   
 
