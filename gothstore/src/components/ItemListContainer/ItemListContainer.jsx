@@ -4,7 +4,7 @@ import styles from './ItemListContainer.module.css'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { db } from '../../services/firebase/firebaseConfig'
-import { getDocs, collection, QuerySnapshot } from 'firebase/firestore'
+import { getDocs, collection, query, where } from 'firebase/firestore'
 
 const ItemListContainer = ({ greeting }) => {
     const [loading, setLoading] = useState(true)
@@ -22,7 +22,9 @@ const ItemListContainer = ({ greeting }) => {
     useEffect(() => {
         setLoading(true)
 
-        const productsCollection = collection(db, 'products')
+        const productsCollection = categoryId
+        ? query(collection(db, 'products'), where('category', '==', categoryId))
+        : collection(db, 'products')
 
         getDocs(productsCollection)
             .then(querySnapshot => {
