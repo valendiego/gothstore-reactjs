@@ -23,25 +23,29 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
             </picture>
             <div className={styles.detail}>
                 <header>
-                    <h2><strong>{name}</strong></h2>
-                </header>
-                <section className={styles.info}>
-                    <p>
+                    <h2 className={styles.name}><strong>{name}</strong></h2>
+                    <p className={styles.category}>
                         Categoría: {category}
                     </p>
+                </header>
+                <section className={styles.info}>
+                    <p className={styles.price}>
+                        <strong>${price}</strong>
+                    </p>
+
                     <p className={styles.description}>
                         {description}
-                    </p>
-                    <p>
-                        <strong>${price}</strong>
                     </p>
                 </section>
                 <footer>
                     {
                         !isInCart(id) ? (
-                            <ItemCount onAdd={handleOnAdd} stock={stock} initial={1}/>
+                            <ItemCount onAdd={handleOnAdd} stock={stock} initial={1} />
                         ) : (
-                            <Link to='/cart'>Finalizar compra</Link>
+                            <div className={styles.itembutton__container}>
+                                <Link to='/' className={styles.itembutton}>Seguir comprando</Link>
+                                <Link to='/cart' className={styles.itembutton}>Finalizar compra</Link>
+                            </div>
                         )
                     }
                 </footer>

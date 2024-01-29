@@ -1,0 +1,32 @@
+.container__cartitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.cartitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-top: 1px solid #0000001a;
+}
+
+.price{
+    margin-bottom: 0;
+}
+
+.name{
+    margin-bottom: 0;
+}
+
+.quantity{
+    margin-bottom: 0;
+}
+
+.subtotal{
+    margin-bottom: 0;
+}

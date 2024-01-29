@@ -55,7 +55,7 @@ const ItemDetailContainer = () => {
     }
 
     return(
-        <div className='ItemDetailContainer'>
+        <div className={styles.itemdetail__container}>
             <ItemDetail {...product}/>
         </div>
     )
