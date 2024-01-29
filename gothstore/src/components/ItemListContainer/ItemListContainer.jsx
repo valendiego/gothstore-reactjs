@@ -58,9 +58,13 @@ const ItemListContainer = ({ greeting }) => {
 
     if (loading) {
         return (
-            <div className='container'>
-                <h1 className={styles.greeting}>{greeting = "𝔅𝔦𝔢𝔫𝔳𝔢𝔫𝔦𝔡𝔬𝔰 𝔞 𝔊𝔬𝔱𝔥 𝔖𝔱𝔬𝔯𝔢"}</h1>
-                <h2 className={styles.loading}>Cargando los productos...</h2>
+            <div>
+                <Banner />
+                <Beneficios />
+                <div className='container'>
+                    <h1 className={styles.greeting}>{greeting = "𝔅𝔦𝔢𝔫𝔳𝔢𝔫𝔦𝔡𝔬𝔰 𝔞 𝔊𝔬𝔱𝔥 𝔖𝔱𝔬𝔯𝔢"}</h1>
+                    <h2 className={styles.loading}>Cargando los productos...</h2>
+                </div>
             </div>
         )
 
