@@ -1,20 +1,25 @@
 
 import styles from './ItemDetail.module.css'
 import ItemCount from '../ItemCount/ItemCount'
-import { Link } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
+import { useNotification } from '../../notification/NotificationService'
 
 
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
+    const { showNotification } = useNotification();
 
-    const { addItem, isInCart } = useCart()
+    const { addItem, getProductQuantity } = useCart()
 
     const handleOnAdd = (quantity) => {
         const objProductToAdd = {
-            id, name, price, quantity, img
+            id, name, price, quantity, img, category
         }
         addItem(objProductToAdd)
+
+        showNotification('success', `Agregaste ${quantity} unidades de ${name}`)
     }
+
+    const productQuantity = getProductQuantity(id)
 
     return (
         <article className={styles.container__detail}>
@@ -38,16 +43,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     </p>
                 </section>
                 <footer>
-                    {
-                        !isInCart(id) ? (
-                            <ItemCount onAdd={handleOnAdd} stock={stock} initial={1} />
-                        ) : (
-                            <div className={styles.itembutton__container}>
-                                <Link to='/' className={styles.itembutton}>Seguir comprando</Link>
-                                <Link to='/cart' className={styles.itembutton}>Finalizar compra</Link>
-                            </div>
-                        )
-                    }
+                    <ItemCount onAdd={handleOnAdd} stock={stock} initial={productQuantity} />
                 </footer>
             </div>
         </article>

@@ -15,7 +15,7 @@ const CartView = () => {
             text: '¿Deseas vaciar el carrito?',
             icon: 'warning',
             showCancelButton: true,
-            buttonsStyling: false,
+            buttonsStyling: true,
             confirmButtonText: 'Sí, vaciar',
             cancelButtonText: 'Cancelar',
             customClass: {
@@ -47,12 +47,14 @@ const CartView = () => {
             <h1 className={styles.cart__title}>Carrito de compras</h1>
             <section>
                 {cart.map(prod => <CartItem key={prod.id} {...prod} />)}
+                <button className={styles.clear__cart} onClick={handleClearCartConfirmation}>Vaciar carrito</button>
             </section>
-            <section>
-                <h2>Total: ${total}</h2>
+            <section className={styles.container__total}>
+                <h2 className={styles.total}><strong>Total: ${total}</strong></h2>
             </section>
-            <section>
-                <Link to='/checkout'>Checkout</Link>
+            <section className={styles.container__buttons}>
+                <Link to='/checkout' className={styles.checkout__button}>Checkout</Link>
+                <Link to='/' className={styles.checkout__button}>Seguir comprando</Link>
             </section>
         </div>
     )

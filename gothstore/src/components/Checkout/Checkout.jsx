@@ -64,16 +64,16 @@ const Checkout = () => {
     }
 
     if (loading) {
-        return <h2>Se está generando su orden...</h2>
+        return <h1 style={{padding:'80px 0 0 0'}}>Se está generando su orden...</h1>
     }
 
     if (orderId) {
-        return <OrderView orderId={orderId} />
+        return <OrderView orderId={orderId} style={{padding:'80px 0 0 0'}} />
     }
 
     return (
         <div className={styles.container__checkout}>
-            <h1>Checkout</h1>
+            <h1 className={styles.title__checkout}>Checkout</h1>
             <div className={styles.container__orderform}>
                 <OrderForm onCreate={createOrder} />
             </div>

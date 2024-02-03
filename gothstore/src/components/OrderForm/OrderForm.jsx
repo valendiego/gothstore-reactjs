@@ -42,26 +42,25 @@ const OrderForm = ({ onCreate }) => {
 
     return (
         <>
-            <section className={`container ${styles.contact}`}>
+            <section className={styles.container__orderform}>
                 <form className={styles.form} onSubmit={handleSubmit}>
 
-                    <legend>Completa todos los campos para generar la orden</legend>
+                    <legend className={styles.titleform}>Completa todos los campos para generar la orden de compra</legend>
 
-                    <div className={styles.container}>
+                    <div className={styles.container__fields}>
                         <div className={styles.field}>
-                            <label>Nombre:</label>
-
-                            <input type="text" placeholder="Nombre" value={name} onChange={handleNameChange} />
+                            <label className={styles.label}>Nombre:</label>
+                            <input className={styles.input} type="text" placeholder="Nombre" value={name} onChange={handleNameChange} />
                         </div>
 
                         <div className={styles.field}>
-                            <label>Teléfono:</label>
-                            <input type="tel" placeholder="Teléfono" value={phone} onChange={handlePhoneChange} />
+                            <label className={styles.label}>Teléfono:</label>
+                            <input className={styles.input} type="tel" placeholder="Teléfono" value={phone} onChange={handlePhoneChange} />
                         </div>
 
                         <div className={styles.field}>
-                            <label>E-mail:</label>
-                            <input type="email" placeholder="E-mail" value={email} onChange={handleEmailChange} />
+                            <label className={styles.label}>E-mail:</label>
+                            <input className={styles.input} type="email" placeholder="E-mail" value={email} onChange={handleEmailChange} />
                         </div>
                     </div>
 
