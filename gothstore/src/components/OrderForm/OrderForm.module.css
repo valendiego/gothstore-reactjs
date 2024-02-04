@@ -6,6 +6,8 @@
     text-align: center;
 }
 
+
+
 .form{
     display: flex;
     flex-direction: column;
@@ -38,24 +40,27 @@
 }
 
 .label{
-    background-color: #000;
-    font-size: 1rem;
+    border: 1px solid #000;
+    font-size: 0.9rem;
     padding: 5px;
-    color: #fff;
+    color: #000;
     min-width: 100px;
+    border-radius: 10px;
 }
 
 .input{
+    font-size: 0.9rem;
     padding: 4px;
     outline: none;
-    border: 1px solid #0000003a;
+    border: none;
+    border-bottom: 1px solid #000;
 }
 
 .submit{
     padding: 10px;
     background-color: #000;
     color: #fff;
-    border: 1px solid #000;
+    border: 2px solid #000;
     transition: all .42s ease;
     border-radius: 20px;
     font-size: 1.1rem;
@@ -63,6 +68,6 @@
 
 .submit:hover{
     background-color: #fff;
-    border: 1px solid #000;
+    border: 2px solid #000;
     color: #000;
 }

@@ -14,3 +14,9 @@
     background-color: #0000001f;
     width: 100%;
 }
+
+.loading{
+    padding: 120px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -19,3 +19,27 @@
     padding: 30px;
     gap: 30px;
 }
+
+.button{
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    transition: all .42s ease;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+.loading{
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}

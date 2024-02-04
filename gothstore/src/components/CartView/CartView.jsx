@@ -36,8 +36,9 @@ const CartView = () => {
     if (totalQuantity === 0) {
         return (
             <div className={styles.cartview__container}>
-                <h1>Carrito vacío</h1>
-                <Link to='/'>Ver Productos</Link>
+                <h1 className={styles.cart__title}>Carrito vacío</h1>
+                <p style={{padding: '20px 0 0 0', fontSize:'1.2rem'}}>Agrega productos al carrito para poder comprar</p>
+                <Link to='/' className={styles.button}>Ver Productos</Link>
             </div>
         )
     }
@@ -53,8 +54,8 @@ const CartView = () => {
                 <h2 className={styles.total}><strong>Total: ${total}</strong></h2>
             </section>
             <section className={styles.container__buttons}>
-                <Link to='/checkout' className={styles.checkout__button}>Checkout</Link>
-                <Link to='/' className={styles.checkout__button}>Seguir comprando</Link>
+                <Link to='/checkout' className={styles.button}>Checkout</Link>
+                <Link to='/' className={styles.button}>Seguir comprando</Link>
             </section>
         </div>
     )

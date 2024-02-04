@@ -27,8 +27,7 @@ const OrderForm = ({ onCreate }) => {
         setFormSubmitted(true)
 
         if (!name || !phone || !email) {
-            showNotification('error', 'Debe completar todos los campos')
-            return
+            return showNotification('error', 'Debe completar todos los campos')
         }
 
         const userData = {

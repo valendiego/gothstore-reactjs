@@ -64,7 +64,7 @@ const Checkout = () => {
     }
 
     if (loading) {
-        return <h1 style={{padding:'80px 0 0 0'}}>Se está generando su orden...</h1>
+        return <h1 className={styles.loading}>Se está generando su orden...</h1>
     }
 
     if (orderId) {
