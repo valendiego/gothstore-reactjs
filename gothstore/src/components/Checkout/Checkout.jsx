@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
-    const [orderId, setOrderId] = useState(null)
+    const [orderSnapshot, setOrderSnapshot] = useState(null)
     const { cart, total, clearCart } = useCart()
     const { showNotification } = useNotification()
 
@@ -49,9 +49,9 @@ const Checkout = () => {
                 batch.commit()
 
                 const orderCollection = collection(db, 'orders')
-                const { id } = await addDoc(orderCollection, objOrder)
+                const orderSnapshot = await addDoc(orderCollection, objOrder)
 
-                setOrderId(id)
+                setOrderSnapshot(orderSnapshot)
                 clearCart()
             } else {
                 showNotification('error', 'Hay productos sin stock disponible')
@@ -67,8 +67,8 @@ const Checkout = () => {
         return <h1 className={styles.loading}>Se está generando su orden...</h1>
     }
 
-    if (orderId) {
-        return <OrderView orderId={orderId} style={{padding:'80px 0 0 0'}} />
+    if (orderSnapshot) {
+        return <OrderView orderSnapshot={orderSnapshot} style={{padding:'80px 0 0 0'}} />
     }
 
     return (

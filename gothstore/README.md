@@ -1,8 +1,8 @@
-<!-- # Goth Store
+# Goth Store
 
 Este producto se encuentra en construcción
 
-Este proyecto fue creado con fines educativos utilizando Vite y Firebase. Para ejecutarlo de manera local, el usuario debe contar con su propia base de datos en Firebase. De lo contrario, no podrá disfrutar completamente de las funcionalidades del producto.
+Este proyecto fue creado para el curso de ReactJs de Coderhouse, utilizando Vite y Firebase.
 
 ## Correr de manera local
 ```bash
@@ -12,23 +12,13 @@ $ npm install
 $ npm run dev
 ```
 
-## Variables de Entorno
-
-Ver [`.env`](https://github.com/Fede-Diiorio/ReactPF_Di-Iorio/blob/main/.env.example)
-
 ## Construido Usando
 
 - [React + Vite](https://vitejs.dev/)
-- [SASS](https://sass-lang.com/)
 - [Firebase](https://firebase.com)
 - [Bootstrap](https://getbootstrap.com/)
 - [SweetAlert2](https://sweetalert2.github.io/)
-- [React-icons](https://react-icons.github.io/react-icons/)
 
 ## Funcionamiento
 
-[Ver](https://youtu.be/4s0HbG6DFTI)
-
-## Testear Aplicación
-
-[Deploy](https://plataforma934.netlify.app/) -->
+[Ver](https://www.veed.io/view/84fa1099-5af8-4645-a495-8dfca574caed?panel=share)
