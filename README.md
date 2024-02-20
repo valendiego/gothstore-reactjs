@@ -23,6 +23,6 @@ $ npm run dev
 
 [Ver](https://www.veed.io/view/84fa1099-5af8-4645-a495-8dfca574caed?panel=share)
 
-<!-- ## Testear aplicación
+## Testear aplicación
 
-[Ver](https://www.veed.io/view/84fa1099-5af8-4645-a495-8dfca574caed?panel=share) -->
+[Ver](https://gothstore.vercel.app/)
