@@ -12,7 +12,7 @@ $ npm install
 $ npm run dev
 ```
 
-## Construido Usando
+## Construido usando
 
 - [React + Vite](https://vitejs.dev/)
 - [Firebase](https://firebase.com)
@@ -22,3 +22,7 @@ $ npm run dev
 ## Funcionamiento
 
 [Ver](https://www.veed.io/view/84fa1099-5af8-4645-a495-8dfca574caed?panel=share)
+
+<!-- ## Testear aplicación
+
+[Ver](https://www.veed.io/view/84fa1099-5af8-4645-a495-8dfca574caed?panel=share) -->
