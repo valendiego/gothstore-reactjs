@@ -25,4 +25,4 @@ $ npm run dev
 
 ## Testear aplicación
 
-[Ver](https://gothstore.vercel.app/)
+[Deploy](https://gothstore.vercel.app/)
