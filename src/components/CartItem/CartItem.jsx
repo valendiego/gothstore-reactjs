@@ -51,9 +51,9 @@ const CartItem = ({ img, name, price, quantity, id, category }) => {
                     </div>
                     <div className={styles.container__footeritem}>
                         <p className={styles.subtotal}>
-                            <strong>Subtotal: ${price * quantity}</strong>
+                            <strong>Subtotal: </strong>${price * quantity}
                         </p>
-                        <button onClick={handleDeleteConfirmation} className="bi-trash3" style={{ border: '1px solid black', backgroundColor: 'black', color: 'white', padding: '0 6px', borderRadius: '5px', fontSize: '1.2rem', marginLeft: '20px', borderRadius: '20px' }}></button>
+                        <button onClick={handleDeleteConfirmation} className={`bi-trash3 ${styles.button}`}></button>
                     </div>
                 </div>
 
